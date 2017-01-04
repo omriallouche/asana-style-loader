@@ -4,7 +4,7 @@ A Javascript library for rotating text messages in the style of Asana.com
 Useful for showing alternating "loading" messages or explain the steps of a process running while the user is waiting. 
 
 ## *Demo*
-![Demo](https://media.giphy.com/media/l4JzccUxHlQh5Ohri/giphy.gif)(https://omriallouche.github.io/asana-style-loader/)
+[![Demo](https://media.giphy.com/media/l4JzccUxHlQh5Ohri/giphy.gif)](https://omriallouche.github.io/asana-style-loader/)
 
 ## Getting started:
   - Include `asana-style-loader.css`:
