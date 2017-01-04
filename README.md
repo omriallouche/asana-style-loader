@@ -60,3 +60,5 @@ var params = {
     secondsPerSlide: 1.5
 }
 ```
+
+Pull requests are welcome!
