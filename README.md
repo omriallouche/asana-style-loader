@@ -61,4 +61,5 @@ var params = {
 }
 ```
 
+## Contributing
 Pull requests are welcome!
