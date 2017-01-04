@@ -1,46 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Asana style loader</title>
+---
+layout: default
+title: Angular Ribbon Directive
+---
 
-        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="src/asana-style-loader.css" rel="stylesheet">
-    </head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="src/asana-style-loader.css" rel="stylesheet">
 
-    <body>
-        <div class="container">
-            <h1>Asana style loader</h1>
-            <div id="textContainer"></div>
-        </div>
+<h1>Asana style loader</h1>
+<div id="textContainer"></div>
 
-        <script src="src/asanaStyleLoader.js"></script>
+<script src="src/asanaStyleLoader.js"></script>
 
-        <script>
-            function ready(fn) {
-                if (document.readyState != 'loading') {
-                    fn();
-                } else {
-                    document.addEventListener('DOMContentLoaded', fn);
-                }
-            }
+<script>
+    function ready(fn) {
+        if (document.readyState != 'loading') {
+            fn();
+        } else {
+            document.addEventListener('DOMContentLoaded', fn);
+        }
+    }
 
-            ready(function () {
-                var params = {
-                    messages: [
-                        "sniffing around",
-                        "getting focused",
-                        "finding assets",
-                        "pulling posts"
-                    ],
-                    verticalSpacing: 120,
-                    secondsPerSlide: 1.5
-                };
+    ready(function () {
+        var params = {
+            messages: [
+                "sniffing around",
+                "getting focused",
+                "finding assets",
+                "pulling posts"
+            ],
+            verticalSpacing: 120,
+            secondsPerSlide: 1.5
+        };
 
-                var asl = new AsanaStyleLoader("textContainer",params);
-            });
-        </script>
-    </body>
-</html>
+        var asl = new AsanaStyleLoader("textContainer",params);
+    });
+</script>
