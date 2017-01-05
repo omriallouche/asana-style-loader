@@ -7,6 +7,8 @@
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
     <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -92,8 +94,10 @@
 
             <div class="vcard-names-container py-3 js-sticky js-user-profile-sticky-fields " style="position: static;">
               <h3 class="vcard-names">
-                <span class="vcard-fullname d-block" itemprop="name">Omri Allouche</span>
-                <span class="vcard-username d-block" itemprop="additionalName"><small>(omriallouche)</small></span>
+                <a href="https://github.com/omriallouche" aria-label="Omri's Github Account">
+                  <span class="vcard-fullname d-block" itemprop="name">Omri Allouche</span>
+                  <span class="vcard-username d-block" itemprop="additionalName"><small>(omriallouche)</small></span>
+                </a>
               </h3>
             </div>
 
@@ -104,11 +108,22 @@
             </div>
 
             <ul class="vcard-details border-top border-gray-light py-3">
-              <li aria-label="Home location" class="vcard-detail pt-1 css-truncate css-truncate-target" itemprop="homeLocation" title="
-                Tel Aviv, Israel
-            ">
-                <svg aria-hidden="true" class="octicon octicon-location" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
-                Tel Aviv, Israel
+              <li class="vcard-detail pt-1 css-truncate css-truncate-target">
+                <a href="https://www.facebook.com/omri.allouche" title="Facebook" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              
+              <li class="vcard-detail pt-1 css-truncate css-truncate-target">
+                <a href="https://twitter.com/GilgameshSleeps" title="Twitter" target="_blank">
+                  <i class="fa fa-twitter"></i> 
+                </a>
+              </li>
+              
+              <li class="vcard-detail pt-1 css-truncate css-truncate-target">
+                <a href="https://www.linkedin.com/in/omria?trk=hp-identity-name" title="LinkedIn" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+                </a>
               </li>
             </ul>
           </div>
