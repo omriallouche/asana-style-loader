@@ -20,16 +20,14 @@
       #main-content h1 { margin-bottom: .75em; }
         
       .repo-owner { margin-bottom: 25px; }
-        
+      sidebar .user-profile { text-align: center; }
       img.avatar.width-full.rounded-2 {
           border-radius: 50%;
           border: 5px solid;
           box-shadow: 0px 0px 7px #777;
           max-width: 100%;
+        width: 50%;
           height: 100%;
-      }
-      .vcard-names-container {
-          text-align: center;
       }
       .vcard-names { font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; }
       .vcard-username small {
@@ -38,7 +36,7 @@
       .user-profile-bio {
           line-height: 1.5em;
           text-align: justify;
-              margin-bottom: 1em;
+          margin-bottom: 1em;
       }
       .vcard-details ul {
           padding-left: 0;
@@ -53,10 +51,6 @@
       }
       ul.vcard-details {
         padding: 0;
-        text-align: center;
-      }
-      .social-follow {
-        text-align: center;
       }
       .share-buttons {
         min-height: 140px;
@@ -65,7 +59,6 @@
         background: white;
         padding: 1em;
         border: 1px solid #eee;
-        text-align: center;
       }
     </style>
     
@@ -122,8 +115,7 @@
             <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
           {% endif %}
 
-          <div class="col-3-999999 float-left-999999 pr-3-9999" itemscope="" itemtype="http://schema.org/Person">
-
+          <div class="user-profile col-3-999999 float-left-999999 pr-3-9999" itemscope="" itemtype="http://schema.org/Person">
             <a href="https://github.com/omriallouche" aria-label="Omri's Github Account" class="vcard-avatar d-block tooltipped tooltipped-s">
               <img alt="Omri Allouche" 
                    class="avatar width-full rounded-2" 
