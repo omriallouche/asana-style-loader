@@ -1,3 +1,5 @@
 name: Asana-style text ticker
 markdown: kramdown
 theme: jekyll-theme-architect
+gems:
+  - jekyll-seo-tag
