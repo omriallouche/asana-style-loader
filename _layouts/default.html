@@ -16,7 +16,9 @@
 
     <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
     
-      <style>
+    <style>
+      #main-content h1 { margin-bottom: .75em; }
+        
       .repo-owner { margin-bottom: 25px; }
         
       img.avatar.width-full.rounded-2 {
@@ -52,6 +54,14 @@
         padding: 0;
         text-align: center;
       }
+      .share-buttons {
+        min-height: 50px;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        background: white;
+        padding: 1em;
+        border: 1px solid #eee;
+      }
     </style>
     
     
@@ -80,7 +90,9 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          {{ content }}
+          <div id="content">
+            {{ content }}
+          </div>
           
           <div class="share-buttons">
             <span class='st_facebook_vcount' displayText='Facebook'></span>
@@ -154,13 +166,6 @@
               <span class='st_twitterfollow_large' displayText='Twitter Follow' st_username='GilgameshSleeps'></span>
             </div>
             
-            <iframe
-  src="https://platform.twitter.com/widgets/follow_button.html?screen_name=GilgameshSleeps&show_screen_name=false&show_count=false&size=l"
-  title="Follow @GilgameshSleeps on Twitter"
-  width="80"
-  height="30"
-  style="border: 0; overflow: hidden;"
-  ></iframe>
           </div>
         </aside>
       </div>
