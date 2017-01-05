@@ -17,6 +17,7 @@
     <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
     
     <style>
+      header h2 { margin-bottom: .5em }
       #main-content h1 { margin-bottom: .75em; }
         
       .repo-owner { margin-bottom: 25px; }
@@ -87,14 +88,16 @@
           <a href="{{ site.github.repository_url }}" class="button"><small>Follow me on</small> GitHub</a>
         {% endif %}
         
-        <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/omriallouche/asana-style-loader" 
-   data-icon="octicon-star" 
-   data-style="mega" 
-   data-count-href="/omriallouche/asana-style-loader/stargazers" 
-   data-count-api="/repos/omriallouche/asana-style-loader#stargazers_count" 
-   data-count-aria-label="# stargazers on GitHub" 
-   aria-label="Star omriallouche/asana-style-loader on GitHub">Star</a>
+        <!-- Github star widget -->
+        <div class="github-star">
+          <a class="github-button" href="https://github.com/omriallouche/asana-style-loader" 
+             data-icon="octicon-star" 
+             data-style="mega" 
+             data-count-href="/omriallouche/asana-style-loader/stargazers" 
+             data-count-api="/repos/omriallouche/asana-style-loader#stargazers_count" 
+             data-count-aria-label="# stargazers on GitHub" 
+             aria-label="Star omriallouche/asana-style-loader on GitHub">Star</a>
+        </div>
       </div>
     </header>
 
